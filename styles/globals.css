@@ -9,3 +9,12 @@
   --secondary-text-color: #c4c9d2;
 }
 
+#__next, html, body {
+  height: 100%;
+}
+
+@layer base {
+  html {
+    @apply bg-nord-3;
+  }
+}
