@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import '../node_modules/nord/src/nord.css'
+import '../styles/nord.css'
 
 export default function SkillButton({ skill }) {
 return (
