@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "../node_modules/nord/src/nord.css";
+@import "./nord.css";
 :root {
   --background-color: var(--nord3);
   --primary-text-color: var(--nord6);
