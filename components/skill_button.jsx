@@ -1,6 +1,4 @@
 import Link from 'next/link'
-import '../styles/nord.css'
-
 export default function SkillButton({ skill }) {
 return (
 <div className="hover:border-opacity-0 cursor-default w-min h-min border-dotted border-2 border-nord-6">
@@ -8,10 +6,3 @@ return (
 </div>
 )
 }
-
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
-}
-
