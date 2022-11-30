@@ -32,11 +32,11 @@ export default function Projects() {
 return (
 <div className="mx-auto max-w-6xl gap-5 flex justify-center self-center flex-wrap">
   <ProjectCard type="Flutter Application" link="https://github.com/s-waite/Loro" date="September 30, 2022" title="Loro" logos={[flutterLogo, dartLogo]}>
-    An ebook management application with support for importing, organizing and managing ebooks
+    An ebook management application with support for importing, organizing, and managing ebooks
   </ProjectCard>
   <ProjectCard type="Java Application" link="https://github.com/s-waite/TermTracker" date="August 15, 2022" title="TermTracker" logos={[javaLogo, javafxLogo,
     junit5Logo]}>
-    An Android app that allows you to add, edit, delete, and track terms, courses, and assigments. Follows the MVC pattern and uses Room abstraction for the SQLite local storage.
+    An Android app that allows you to add, edit, delete, and track terms, courses, and assignments. Follows the MVC pattern and uses Room abstraction for the SQLite local storage.
   </ProjectCard>
   <ProjectCard type="Web Application" link="https://github.com/s-waite/taniti" date="June 6, 2022" title="Taniti Website" demoLink="https://swaite-taniti.netlify.app/" logos={[nextjsLogo, javascriptLogo, htmlLogo, cssLogo, tailwindLogo]}>
     A mock tourism website for the fake country "Taniti" created using Next.js with tailwindCSS and deployed with Netlify. 
