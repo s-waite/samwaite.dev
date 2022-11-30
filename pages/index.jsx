@@ -7,14 +7,14 @@ const { animateFast } = useRouter().query
 return (
 <div className="animate-none transform-none transition-none">
   <header className="text-nord-6 text-9xl font-['Bebas_Neue'] tracking-wider">Sam Waite</header>
-  <div className={ `font-['Lato'] pt-7 text-4xl ${animateFast ? "animate-slide-0-fast" : "animate-slide-0"}` }>
+  <div className={ `font-['Bebas_Neue'] pt-7 text-4xl ${animateFast ? "animate-slide-0-fast" : "animate-slide-0"}` }>
     <Link className="text-nord-6 w-min hover:scale-110 duration-75 block" href="/about">About</Link>
   </div>
-  <div className={ `font-['Lato'] pt-7 text-4xl ${animateFast ? "animate-slide-1-fast" : "animate-slide-1"} opacity-0 [animation-fill-mode:forwards]` }>
-    <Link className="text-nord-6 w-min hover:scale-110 duration-75 block" href="/">Projects</Link>
+  <div className={ `font-['Bebas_Neue'] pt-7 text-4xl ${animateFast ? "animate-slide-1-fast" : "animate-slide-1"} opacity-0 [animation-fill-mode:forwards]` }>
+    <Link className="text-nord-6 w-min hover:scale-110 duration-75 block" href="/projects">Projects</Link>
   </div>
-  <div className={ `font-['Lato'] pt-7 text-4xl ${animateFast ? "animate-slide-2-fast" : "animate-slide-2"} opacity-0  [animation-fill-mode:forwards]` }>
-    <Link className="text-nord-6 w-min hover:scale-110 duration-75 block" href="/">Contact</Link>
+  <div className={ `font-['Bebas_Neue'] pt-7 text-4xl ${animateFast ? "animate-slide-2-fast" : "animate-slide-2"} opacity-0  [animation-fill-mode:forwards]` }>
+    <Link className="text-nord-6 w-min hover:scale-110 duration-75 block" href="/contact">Contact</Link>
   </div>
 </div>
 )
