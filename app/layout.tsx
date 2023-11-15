@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
-import './globals.css'
+import Link from 'next/link'
+import './global.css'
+import { poppins, robotoMono } from '@/app/fonts';
 
 export const metadata: Metadata = {
     title: 'Create Next App',
@@ -12,8 +14,20 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <html lang="en">
-            <body>{children}</body>
+        <html lang="en" className={poppins.className}>
+            <body className='w-screen h-screen m-0 p-0 absolute top-0'>
+                <nav className='fixed w-[300px]'>
+                    <h1>Sam Waite</h1>
+                    <div>Software Developer, Web Developer, Open-source enthusiast</div>
+                    <Link className={robotoMono.className} href="/skills">// Skills</Link>
+                    <Link className={robotoMono.className} href="/projects">// Projects</Link>
+                    <Link className={robotoMono.className} href="/contact">// Contact</Link>
+                </nav>
+                <div className='ml-[304px] fixed w-px h-screen bg-black'></div>
+                <main className='ml-[305px]'>
+                    {children}
+                </main>
+            </body>
         </html>
     )
 }

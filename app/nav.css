@@ -1,0 +1,23 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#line {
+    width: 1px;
+    height: 100vh;
+    background-color: black;
+}
+
+main {
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 300px min-content 1fr;
+    margin: 0;
+    padding: 0;
+}
