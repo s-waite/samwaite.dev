@@ -10,6 +10,22 @@
     break-inside: avoid;
 }
 
+@media (max-width: 1170px) {
+    .skill {
+        width: 400px;
+    }
+
+    /* … */
+}
+
+@media (max-width: 767px) {
+    .skill {
+        width: 260px;
+    }
+
+    /* … */
+}
+
 a {
     color: black;
 }

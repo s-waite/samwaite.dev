@@ -8,9 +8,9 @@ import { poppins, robotoMono } from '@/app/fonts';
 export default function Skills() {
     return (
         // <div className={`${poppins.variable} max-h-screen font-sans [column-width:300px] w-min [column-gap:0px]`}>
-        <div className='overflow-hidden xl:overflow-auto max-h-screen w-full'>
-            <div className={`mt-6 ml-4 ${poppins.className} text-3xl`}>Skills</div>
-            <div className={`${poppins.variable} ml-4 mt-4 max-h-screen font-sans w-min flex gap-6 overflow-hidden flex-row xl:flex-wrap`}>
+        <div className='overflow-hidden xl:overflow-auto w-full'>
+            <div className={`mt-6 ml-4 ${poppins.className} text-3xl sm:mx-0 sm:text-center`}>Skills</div>
+            <div className={`${poppins.variable} ml-4 mt-4 font-sans w-min flex gap-6 overflow-hidden flex-row flex-grow xl:flex-wrap xl:mx-auto`}>
                 <div className='flex flex-col items-center gap-2 overflow-y-scroll hide-scrollbar'>
                     <div className="mb-4 w-[260px] sticky top-0 z-20 bg-white after:bg-gradient-to-b from-white to-transparent after:h-10 after:z-50 after:absolute after:w-full after:content-['']">
                         <div className={`${robotoMono.className} font-mono font-bold text-lg h-10 my-auto ml-0`}>// Languages</div>
