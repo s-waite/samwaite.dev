@@ -17,10 +17,14 @@ export default function RootLayout({
     return (
         <html lang="en" className={poppins.className}>
             <body className='m-0 p-0 absolute top-0'>
-                <nav className='max-h-screen fixed w-[300px] py-6 pl-6 overflow-hidden sm:w-0'>
-                    <h1 className='text-3xl mb-2'>Sam Waite</h1>
-                    <div className='mb-5'>Software Developer, Web Developer, Open-source enthusiast</div>
-                    <Nav />
+                <nav className='max-h-screen fixed w-[300px] py-6 pl-6 sm:px-4 sm:pb-0 overflow-hidden sm:block sm:sticky sm:top-0 sm:w-screen sm:bg-white sm:z-50 sm:h-max'>
+                    <h1 className='text-3xl mb-2 sm:text-2xl sm:mb-1'>Sam Waite</h1>
+                    <div>
+                        <div className='mb-5 sm:mb-3 sm:text-xs'>Software Developer, Web Developer, Open-Source Enthusiast</div>
+                        <Nav />
+
+                    </div>
+                    <div className='w-screen h-px bg-black relative right-4 hidden sm:block sm:mt-4'></div>
                 </nav>
                 <div className='ml-[300px] fixed w-px h-screen bg-black sm:hidden sm:m-0'></div>
                 <main className='pl-[301px] w-screen sm:pl-0'>

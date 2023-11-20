@@ -13,7 +13,7 @@ type ProjectCardProps = {
 
 export default function Card({ imagePath, imageAlt, description, linkPath, title, languages }: ProjectCardProps) {
     return (
-        <div className={`p-3 flex justify-start ${robotoMono.className} max-w-xl`}>
+        <div className={`p-3 flex justify-start ${robotoMono.className} max-w-xl sm:flex-col`}>
             <div className='flex flex-col gap-2 min-w-[250px] '>
                 <h2 className='font-bold text-2xl'>{title}</h2>
                 <div>{`[${languages.join(', ')}]`}</div>
