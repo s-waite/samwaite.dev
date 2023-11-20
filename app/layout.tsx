@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import './global.css'
 import { poppins, robotoMono } from '@/app/fonts';
+import Nav from '@/app/components/nav'
 
 export const metadata: Metadata = {
     title: 'Create Next App',
@@ -15,16 +16,14 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en" className={poppins.className}>
-            <body className='w-screen h-screen m-0 p-0 absolute top-0'>
-                <nav className='fixed w-[300px]'>
-                    <h1>Sam Waite</h1>
-                    <div>Software Developer, Web Developer, Open-source enthusiast</div>
-                    <Link className={robotoMono.className} href="/skills">// Skills</Link>
-                    <Link className={robotoMono.className} href="/projects">// Projects</Link>
-                    <Link className={robotoMono.className} href="/contact">// Contact</Link>
+            <body className='m-0 p-0 absolute top-0'>
+                <nav className='max-h-screen fixed w-[300px] py-6 pl-6 overflow-hidden'>
+                    <h1 className='text-3xl mb-2'>Sam Waite</h1>
+                    <div className='mb-5'>Software Developer, Web Developer, Open-source enthusiast</div>
+                    <Nav />
                 </nav>
-                <div className='ml-[304px] fixed w-px h-screen bg-black'></div>
-                <main className='ml-[305px]'>
+                <div className='ml-[300px] fixed w-px h-screen bg-black'></div>
+                <main className='pl-[301px] w-screen'>
                     {children}
                 </main>
             </body>

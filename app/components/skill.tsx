@@ -1,4 +1,5 @@
 import './skill.css'
+import Link from 'next/link'
 import { robotoMono, poppins } from '@/app/fonts';
 import React, { useState, useRef } from 'react';
 
@@ -48,7 +49,7 @@ export default function Skill({ title, blurb, projects }: SkillProps) {
                 <div className={robotoMono.className}>// Projects</div>
                 {projects.map(project => (
                     <div key={project.title} className="project">
-                        <a href={project.link}>{project.title}</a> - {project.description}
+                        <Link href={project.link}>{project.title}</Link> - {project.description}
                     </div>
                 ))}
             </div>
