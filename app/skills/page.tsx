@@ -9,8 +9,9 @@ export default function Skills() {
     return (
         // <div className={`${poppins.variable} max-h-screen font-sans [column-width:300px] w-min [column-gap:0px]`}>
         <div className='overflow-hidden xl:overflow-auto w-full'>
-            <div className={`mt-6 ml-4 ${poppins.className} text-3xl sm:hidden sm:mx-0 sm:text-center`}>Skills</div>
-            <div className={`${poppins.variable} ml-4 mt-4 font-sans w-min flex gap-6 overflow-hidden flex-row flex-grow xl:flex-wrap xl:mx-auto`}>
+            {/* <div className={`mt-6 ml-4 ${poppins.className} text-3xl sm:hidden sm:mx-0 sm:text-center`}>Skills</div> */}
+            <div className={`border-b-2 border-dotted h-20 pl-4 ${poppins.className} sm:hidden text-3xl fixed w-full top-0 z-50 pt-6 bg-white`}>Skills</div>
+            <div className={`${poppins.variable} ml-4 mt-24 font-sans w-min flex gap-6 sm:mt-5 overflow-hidden flex-row flex-grow xl:flex-wrap xl:mx-auto`}>
                 <div className='flex flex-col items-center gap-2 overflow-y-scroll hide-scrollbar'>
                     <div className="mb-4 w-[260px] sticky top-0 z-20 bg-white after:bg-gradient-to-b from-white to-transparent after:h-10 after:z-50 after:absolute after:w-full after:content-['']">
                         <div className={`${robotoMono.className} font-mono font-bold text-lg h-10 my-auto ml-0`}>// Languages</div>
@@ -220,7 +221,7 @@ export default function Skills() {
                         <div className={`${robotoMono.className} font-mono font-bold text-lg h-10 my-auto ml-0`}>// Technologies, Tools</div>
                     </div>
                     <Skill
-                        title="JUnit"
+                        title="Linux"
                         blurb="some blurb"
                         projects={[
                             {
@@ -236,7 +237,7 @@ export default function Skills() {
                         ]}
                     />
                     <Skill
-                        title="Node.js"
+                        title="MacOS"
                         blurb="some blurb"
                         projects={[
                             {
@@ -252,7 +253,7 @@ export default function Skills() {
                         ]}
                     />
                     <Skill
-                        title="Next.js"
+                        title="Windows"
                         blurb="some blurb"
                         projects={[
                             {
@@ -268,7 +269,7 @@ export default function Skills() {
                         ]}
                     />
                     <Skill
-                        title="React.js"
+                        title="Git"
                         blurb="some blurb"
                         projects={[
                             {
@@ -284,7 +285,55 @@ export default function Skills() {
                         ]}
                     />
                     <Skill
-                        title="WordPress"
+                        title="Docker"
+                        blurb="some blurb"
+                        projects={[
+                            {
+                                title: "Project Loro",
+                                link: "/loro",
+                                description: "An ebook management application built with Flutter."
+                            },
+                            {
+                                title: "Project ABC",
+                                link: "/abc",
+                                description: "A sample project description here."
+                            },
+                        ]}
+                    />
+                    <Skill
+                        title="Shell Scripting"
+                        blurb="some blurb"
+                        projects={[
+                            {
+                                title: "Project Loro",
+                                link: "/loro",
+                                description: "An ebook management application built with Flutter."
+                            },
+                            {
+                                title: "Project ABC",
+                                link: "/abc",
+                                description: "A sample project description here."
+                            },
+                        ]}
+                    />
+                    <Skill
+                        title="GitHub"
+                        blurb="some blurb"
+                        projects={[
+                            {
+                                title: "Project Loro",
+                                link: "/loro",
+                                description: "An ebook management application built with Flutter."
+                            },
+                            {
+                                title: "Project ABC",
+                                link: "/abc",
+                                description: "A sample project description here."
+                            },
+                        ]}
+                    />
+                    <Skill
+                        title="Figma"
                         blurb="some blurb"
                         projects={[
                             {

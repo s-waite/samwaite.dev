@@ -24,7 +24,7 @@ export default function Skill({ title, blurb, projects }: SkillProps) {
     };
 
     // Calculate the max height for the expanding animation
-    const maxHeight = isExpanded && contentRef.current ? `${contentRef.current.scrollHeight}px` : "0";
+    const maxHeight = isExpanded && contentRef.current ? (contentRef.current as HTMLDivElement).scrollHeight : 0;
 
     return (
         <div className="skill">
